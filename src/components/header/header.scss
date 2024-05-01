@@ -1,1 +1,12 @@
 @import "config";
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 0.5rem;
+  border-bottom: 1px solid $gray-color;
+  h1 {
+    margin: 0;
+  }
+}
