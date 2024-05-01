@@ -1,7 +1,7 @@
-import "./Header.css";
+import "./header.css";
 import React, { useState, useEffect } from "react";
 
-function App() {
+function Header() {
   return <></>;
 }
 

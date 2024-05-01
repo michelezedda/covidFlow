@@ -1,5 +1,5 @@
 import axios from "axios";
-import "./Dashboard.css";
+import "./dashboard.css";
 import React, { useState, useEffect } from "react";
 
 function Dashboard() {
