@@ -1,68 +1,93 @@
-:root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+@import "config";
+
+html,
+body {
+  font-family: $font-stack;
   line-height: 1.5;
   font-weight: 400;
-
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
   text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
+  background-color: $bg-color-3;
+  margin: 0;
+  padding: 0;
 }
-
 a {
   font-weight: 500;
-  color: #646cff;
+  color: $brown-color;
   text-decoration: inherit;
+  a:hover {
+    color: $brown-color;
+  }
 }
-a:hover {
-  color: #535bf2;
-}
-
-body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
-}
-
 h1 {
   font-size: 3.2em;
   line-height: 1.1;
 }
-
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
+#load-more {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 55px 105px;
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  background-color: rgba($brown-color, 0.5);
+  box-shadow: 4px 4px 4px rgba($brown-color, 0.5);
+  border: 3px solid $brown-color;
+  overflow: hidden;
   cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
-}
-
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
+  &::before {
+    content: "⋯";
+    font-size: 40px;
+    color: $brown-color;
+    z-index: 2;
   }
-  a:hover {
-    color: #747bff;
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    border-radius: 50%;
+    border: 3px solid $brown-color;
+    transition: transform 0.5s ease;
+    transform: scale(0);
   }
-  button {
-    background-color: #f9f9f9;
+  &:hover::before {
+    color: $green-color;
+    font-weight: bold;
+    content: "🥑🥑🥑";
+    font-size: 14px;
+  }
+  &:hover {
+    border: 3px solid $green-color;
+    background-color: rgba($green-color, 0.5);
+    transform: scale(1.2);
+  }
+  &::after {
+    color: $green-color;
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 30px;
+    height: 30px;
+    background-color: $green-color;
+    border-radius: 50%;
+    z-index: 1;
+    opacity: 0;
+    transition: all 1.5s ease;
+  }
+  &:hover::after {
+    width: 300px;
+    height: 300px;
+    opacity: 0.3;
+  }
+  &:active {
+    transform: scale(1.1);
   }
 }
