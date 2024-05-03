@@ -1,9 +1,15 @@
-import axios from "axios";
 import "./dashboard.css";
-import React, { useState, useEffect } from "react";
 
 function Dashboard() {
-  return <></>;
+  return (
+    <>
+      <div className="dashboard">
+        <div className="container">
+          <h1>Dashboard</h1>
+        </div>
+      </div>
+    </>
+  );
 }
 
 export default Dashboard;
