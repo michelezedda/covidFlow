@@ -6,4 +6,32 @@
   align-items: center;
   padding: 0;
   margin: 100px 0;
+  .about {
+    text-align: center;
+  }
+  button {
+    border: 1px solid $green-color;
+    background-color: $green-color;
+    color: $primary-color;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-right: 20px;
+  }
+  button:hover {
+    background-color: $primary-color;
+  }
+  button:active {
+    background-color: $green-color;
+  }
+  .more {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .icons {
+      border: 1px solid $green-color;
+      padding: 40px 40px;
+      margin: 20px 20px;
+    }
+  }
 }
