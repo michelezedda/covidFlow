@@ -1,4 +1,5 @@
 import "./footer.css";
+import { Link } from "react-router-dom";
 
 function Footer() {
   const currentYear = new Date().getFullYear();
@@ -10,7 +11,13 @@ function Footer() {
           <p>
             Copyright © {currentYear} covidFlow - All rights reserved &nbsp; |
             &nbsp;
-            <span>About us</span>
+            <Link to="/">
+              <span>Learn about COVID-19</span>
+            </Link>
+            &nbsp; | &nbsp;
+            <Link to="/">
+              <span>Protect yourself and others</span>
+            </Link>
           </p>
         </div>
       </footer>
