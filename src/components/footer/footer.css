@@ -1,1 +1,1 @@
-footer{padding:40px 10px 20px 10px;display:flex;align-items:center;justify-content:center;flex-wrap:wrap;flex-shrink:0;background-color:rgba(135,186,169,.8);color:#fff;text-align:center}
+footer{padding:40px 10px 20px 10px;display:flex;align-items:center;justify-content:center;flex-wrap:wrap;flex-shrink:0;background-color:rgba(135,186,169,.8);color:#fff;text-align:center;font-size:18px}footer span{color:#fff}footer span:hover{font-weight:bold}

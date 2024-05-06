@@ -1,5 +1,9 @@
 import "./header.css";
 import { Link } from "react-router-dom";
+import sickPic from "/sick.png";
+import masksPic from "/masks.png";
+import exposedPic from "/exposed.png";
+import testingPic from "/testing.png";
 
 function Header() {
   return (
@@ -23,17 +27,29 @@ function Header() {
             </a>
           </div>
           <div className="more">
-            <Link to="Masks">
-              <div className="icons">Masks</div>
+            <Link to="Masks" style={{ textDecoration: "none" }}>
+              <div className="icons">
+                <img src={masksPic} />
+                Masks
+              </div>
             </Link>
-            <Link to="Sick">
-              <div className="icons">Sick?</div>
+            <Link to="Sick" style={{ textDecoration: "none" }}>
+              <div className="icons">
+                <img src={sickPic} />
+                Sick?
+              </div>
             </Link>
-            <Link to="Exposed">
-              <div className="icons">Exposed?</div>
+            <Link to="Exposed" style={{ textDecoration: "none" }}>
+              <div className="icons">
+                <img src={exposedPic} />
+                Exposed?
+              </div>
             </Link>
-            <Link to="Testing">
-              <div className="icons">Testing?</div>
+            <Link to="Testing" style={{ textDecoration: "none" }}>
+              <div className="icons">
+                <img src={testingPic} />
+                Testing?
+              </div>
             </Link>
           </div>
         </div>

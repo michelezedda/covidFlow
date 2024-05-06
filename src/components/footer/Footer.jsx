@@ -11,11 +11,11 @@ function Footer() {
           <p>
             Copyright © {currentYear} covidFlow - All rights reserved &nbsp; |
             &nbsp;
-            <Link to="/">
+            <Link to="/" style={{ textDecoration: "none" }}>
               <span>Learn about COVID-19</span>
             </Link>
             &nbsp; | &nbsp;
-            <Link to="/">
+            <Link to="/" style={{ textDecoration: "none" }}>
               <span>Protect yourself and others</span>
             </Link>
           </p>
