@@ -6,7 +6,7 @@ function Dashboard() {
     <>
       <div className="dashboard">
         <div className="container">
-          <h1>Dashboard</h1>
+          <h2>Dashboard</h2>
           <img src={familymaskPic} />
         </div>
       </div>

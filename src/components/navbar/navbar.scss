@@ -3,18 +3,18 @@
 nav {
   background-color: $bg-color-3;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   position: fixed;
   top: 0;
   left: 50%;
   transform: translateX(-50%);
-  width: 55%;
+  width: 100%;
   z-index: 100;
   border: solid 0 $gray-color;
   box-shadow: 1px 7px 5px -5px lighten($green-color, 0.9%);
   border-bottom: 2px solid $green-color;
-  margin: 0 auto;
   .logo-container img {
     width: 600px;
     height: auto;
@@ -23,6 +23,49 @@ nav {
 }
 
 @media screen and (max-width: 800px) {
+  nav {
+    background-color: $bg-color-3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    z-index: 100;
+    border: solid 0 $gray-color;
+    box-shadow: 1px 7px 5px -5px lighten($green-color, 0.9%);
+    border-bottom: 2px solid $green-color;
+    margin: 0 auto;
+    .logo-container img {
+      width: 480px;
+      height: auto;
+      margin-right: 20px;
+    }
+  }
 }
 @media screen and (min-width: 800.02px) and (max-width: 1190px) {
+  nav {
+    background-color: $bg-color-3;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    z-index: 100;
+    border: solid 0 $gray-color;
+    box-shadow: 1px 7px 5px -5px lighten($green-color, 0.9%);
+    border-bottom: 2px solid $green-color;
+    margin: 0 auto;
+    .logo-container img {
+      width: 580px;
+      height: auto;
+      margin-right: 20px;
+    }
+  }
 }
