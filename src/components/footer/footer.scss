@@ -2,7 +2,7 @@
 
 footer {
   padding: 70px 10px 50px 10px;
-  display: inline-block;
+  display: flex;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
@@ -10,13 +10,14 @@ footer {
   background-color: rgba($green-color, 0.8);
   color: $primary-color;
   text-align: center;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  span {
-    color: $primary-color;
-  }
-  span:hover {
-    font-weight: bold;
-  }
+  width: 55%;
+  margin: 0 auto;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+span {
+  color: $primary-color;
+}
+span:hover {
+  font-weight: bold;
 }

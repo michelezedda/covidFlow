@@ -3,6 +3,7 @@ import Navbar from "../../components/navbar/Navbar";
 import Footer from "../../components/footer/Footer";
 import maskingPic from "/masking.png";
 import familymask2Pic from "/family-mask-2.png";
+import wearamaskPic from "/wear-a-mask.png";
 
 function Masks() {
   return (
@@ -76,6 +77,7 @@ function Masks() {
                   </li>
                 </ul>
               </p>
+              <img src={wearamaskPic} />
             </div>
             <div className="right">
               <h2>WHO SHOULD NOT WEAR A MASK</h2>

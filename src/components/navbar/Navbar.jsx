@@ -5,13 +5,13 @@ import { Link } from "react-router-dom";
 function Navbar() {
   return (
     <>
-      <div className="navbar-container">
+      <nav>
         <div className="logo-container">
           <Link to="/">
             <img src={myLogo} alt="covidFlow logo" />
           </Link>
         </div>
-      </div>
+      </nav>
     </>
   );
 }
