@@ -13,6 +13,11 @@ body {
 }
 .container {
   margin: 0 auto;
-  max-width: 107rem;
+  max-width: 65rem;
   padding: 0 4rem;
+}
+.main-pic {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }

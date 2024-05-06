@@ -4,6 +4,7 @@ import sickPic from "/sick.png";
 import masksPic from "/masks.png";
 import exposedPic from "/exposed.png";
 import testingPic from "/testing.png";
+import infoPic from "/info.png";
 
 function Header() {
   return (
@@ -12,6 +13,7 @@ function Header() {
         <div className="container">
           <div className="about">
             <h1>About COVID-19</h1>
+            <img src={infoPic} />
             <p>
               COVID-19 is a respiratory disease that is caused by the virus
               SARS-CoV-2. Many people who are infected have mild symptoms or
@@ -19,9 +21,11 @@ function Header() {
               death. Some people, including those who got no symptoms at first,
               get health problems that last for weeks or months.
             </p>
-            <Link to="Learn">
-              <button>Learn about COVID-19</button>
-            </Link>
+            <div className="button-wrapper">
+              <Link to="Learn">
+                <button>Learn about COVID-19</button>
+              </Link>
+            </div>
           </div>
           <div className="more">
             <Link to="Masks" style={{ textDecoration: "none" }}>

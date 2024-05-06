@@ -12,8 +12,11 @@
       font-size: 50px;
     }
     p {
-      font-size: 20px;
+      font-size: 23px;
       margin-bottom: 30px;
+    }
+    img {
+      width: 120px;
     }
   }
   button {
@@ -34,10 +37,28 @@
     background-color: $pink-color;
     scale: calc(0.98);
   }
+  .button-wrapper {
+    position: relative;
+  }
+  .button-wrapper::before,
+  .button-wrapper::after {
+    content: "";
+    position: absolute;
+    top: 30%;
+    width: 380px;
+    height: 2px;
+    background-color: $green-color;
+  }
+  .button-wrapper::before {
+    left: -1px;
+  }
+  .button-wrapper::after {
+    right: -1px;
+  }
   .more {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     flex-shrink: 0;
     .icons {

@@ -1,6 +1,12 @@
 import "./sick.css";
 import Navbar from "../../components/navbar/Navbar";
 import Footer from "../../components/footer/Footer";
+import headachePic from "/headache.png";
+import bodyachesPic from "/body-aches.png";
+import coughPic from "/cough.png";
+import feverPic from "/fever.png";
+import sicknessPic from "/sickness.png";
+import wearingmaskboyPic from "/wearing-a-mask-boy.png";
 
 function Sick() {
   return (
@@ -9,6 +15,9 @@ function Sick() {
       <div className="sick">
         <div className="container">
           <h1>WHAT IF YOU ARE SICK?</h1>
+          <div className="main-pic">
+            <img src={sicknessPic} />
+          </div>{" "}
           <div className="split">
             <div className="left">
               <h2>PREVENTIVE ACTIONS</h2>
@@ -164,6 +173,12 @@ function Sick() {
                 </ul>
               </p>
               <h2>SYMPTOMS</h2>
+              <div className="symptoms-icons">
+                <img src={feverPic} />
+                <img src={coughPic} />
+                <img src={headachePic} />
+                <img src={bodyachesPic} />
+              </div>
               <p>
                 COVID-19, flu, and RSV are some of the diseases caused by
                 viruses that have very similar symptoms. Illness can be mild to
@@ -223,6 +238,7 @@ function Sick() {
                 LA County Department of Public Health can assist with COVID-19
                 treatment.
               </p>
+              <img src={wearingmaskboyPic} />
             </div>
           </div>
         </div>

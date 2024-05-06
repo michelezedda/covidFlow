@@ -1,6 +1,9 @@
 import "./exposed.css";
 import Navbar from "../../components/navbar/Navbar";
 import Footer from "../../components/footer/Footer";
+import virusPic from "/virus.png";
+import socialdistancingPic from "/social-distancing.png";
+import wearingmaskgirlPic from "/wearing-a-mask-girl.png";
 
 function Exposed() {
   return (
@@ -9,50 +12,58 @@ function Exposed() {
       <div className="exposed">
         <div className="container">
           <h1>WHAT IF YOU ARE EXPOSED?</h1>
+          <div className="main-pic">
+            <img src={virusPic} />
+          </div>
           <div className="split">
             <div className="left">
               <h2>OVERVIEW</h2>
               <p>
-                If you feel sick with cold, flu, or COVID-19 symptoms:
+                <b>If you feel sick with cold, flu, or COVID-19 symptoms:</b>
                 <ol>
                   <li>
-                    Isolate: Stay home away from others until you have not had a
-                    fever for 24 hours (without using fever-reducing medication)
-                    and other symptoms are improving. LACDPH recommends that you
-                    test negative before leaving isolation.
+                    <b>Isolate: Stay home away from others</b> until you have
+                    not had a fever for 24 hours (without using fever-reducing
+                    medication) and other symptoms are improving. LACDPH
+                    recommends that you test negative before leaving isolation.
                   </li>
                   <li>
-                    Wear a well-fitting mask around others for 10 days after you
-                    started feeling sick, even if your symptoms are improving.
-                    Take action to protect others from getting sick.
+                    <b>Wear a well-fitting mask</b> around others for 10 days
+                    after you started feeling sick, even if your symptoms are
+                    improving. Take action to protect others from getting sick.
                   </li>
                   <li>
-                    Get tested for COVID-19 right away. If you test negative but
-                    continue to feel sick, test again 48 hours later. If you
-                    continue testing negative, talk to your doctor about testing
-                    for other respiratory pathogens, especially if you are
-                    high-risk for severe illness.
+                    <b>Get tested for COVID-19 right away.</b> If you test
+                    negative but continue to feel sick, test again 48 hours
+                    later. If you continue testing negative, talk to your doctor
+                    about testing for other respiratory pathogens, especially if
+                    you are high-risk for severe illness.
                   </li>
                   <li>
-                    Avoid contact with high-risk individuals for 10 days after
-                    you started feeling sick. This includes the elderly, people
-                    who reside temporarily or live in a congregate facilityi or
-                    people who are immunocompromised.
+                    <b>
+                      Avoid contact with high-risk individuals for 10 days after
+                      you started feeling sick.
+                    </b>
+                    This includes the elderly, people who reside temporarily or
+                    live in a congregate facilityi or people who are
+                    immunocompromised.
                   </li>
                   <li>
-                    Get treatment for COVID-19 or influenza. Talk to your
+                    <b>Get treatment</b> for COVID-19 or influenza. Talk to your
                     provider about options.
                   </li>
                 </ol>
-                If you test positive for or a healthcare provider diagnoses you
-                with COVID-19:
+                <b>
+                  If you test positive for or a healthcare provider diagnoses
+                  you with COVID-19:
+                </b>
                 <ol>
                   <li>
                     If you have symptoms:
                     <ul>
                       <li>
-                        Follow the steps above for people who feel sick with
-                        symptoms of a cold, flu, or COVID-19.
+                        <b>Follow the steps above</b> for people who feel sick
+                        with symptoms of a cold, flu, or COVID-19.
                       </li>
                     </ul>
                   </li>
@@ -62,19 +73,22 @@ function Exposed() {
                   </li>
                   <ul>
                     <li>
-                      Wear a well-fitting mask around others for 10 days after
-                      you tested positive.
+                      <b>Wear a well-fitting mask</b> around others for 10 days
+                      after you tested positive.
                     </li>
                     <li>
-                      Monitor yourself for symptoms. If you start feeling sick,
-                      immediately follow instructions above for people who feel
-                      sick with symptoms of a cold, flu, or COVID-19.
+                      <b>Monitor yourself for symptoms.</b> If you start feeling
+                      sick, immediately follow instructions above for people who
+                      feel sick with symptoms of a cold, flu, or COVID-19.
                     </li>
                     <li>
-                      Avoid contact with high-risk individuals for 10 days after
-                      you started feeling sick. Higher risk individuals include
-                      the elderly, people who reside temporarily or live in a
-                      congregate facilityi or people who are immunocompromised.
+                      <b>
+                        Avoid contact with high-risk individuals for 10 days
+                        after you started feeling sick.
+                      </b>
+                      Higher risk individuals include the elderly, people who
+                      reside temporarily or live in a congregate facilityi or
+                      people who are immunocompromised.
                     </li>
                   </ul>
                   In addition, tell anyone you’ve been around while you were
@@ -82,32 +96,35 @@ function Exposed() {
                   felt sick) that they have been exposed and need to follow the
                   instructions for people exposed to COVID-19 below.
                 </ol>
-                If you are a close contact to someone with COVID-19:
+                <b>If you are a close contact to someone with COVID-19:</b>
                 <ol>
                   <li>
-                    Wear a well-fitting mask around others for 10 days after
-                    your last exposure, especially if you have contact with
-                    high-risk individuals like people who reside temporarily or
-                    live in a congregate facility or people who are
-                    immunocompromised.
+                    <b>Wear a well-fitting mask</b> around others for 10 days
+                    after your last exposure, especially if you have contact
+                    with high-risk individuals like people who reside
+                    temporarily or live in a congregate facility or people who
+                    are immunocompromised.
                   </li>
                   <li>
-                    Monitor your health for 10 days after your last exposure. If
-                    you start to feel sick, immediately follow instructions
-                    above for people who feel sick with symptoms of COVID-19.
+                    <b>Monitor your health</b> for 10 days after your last
+                    exposure. If you start to feel sick, immediately follow
+                    instructions above for people who feel sick with symptoms of
+                    COVID-19.
                   </li>
                   <li>
-                    Get tested 3-5 days after you were last exposed. If you
-                    recently recovered from COVID-19 in the last 90 days, review
-                    testing recommendations.
+                    <b>Get tested</b> 3-5 days after you were last exposed. If
+                    you recently recovered from COVID-19 in the last 90 days,
+                    review testing recommendations.
                   </li>
                 </ol>
               </p>
+              <img src={wearingmaskgirlPic} />
             </div>
             <div className="right">
               <h2>
                 PROTECT OTHERS: STAY HOME AND AWAY FROM OTHERS IF YOU FEEL SICK
               </h2>
+              <img src={socialdistancingPic} />
               <p>
                 If you have symptoms of COVID-19 or another respiratory illness,
                 stay home away from others until you have not had a fever for 24
@@ -116,7 +133,7 @@ function Exposed() {
                 while you isolate:
                 <ul>
                   <li>
-                    Stay home except to get medical care.
+                    <b>Stay home except to get medical care.</b>
                     <ul>
                       <li>
                         If you need to leave home to get medical care, wear a
@@ -129,7 +146,7 @@ function Exposed() {
                     </ul>
                   </li>
                   <li>
-                    Separate yourself from others in your home.
+                    <b>Separate yourself from others in your home.</b>
                     <ul>
                       <li>
                         Wear a mask if you need to be in the same room as other
@@ -157,12 +174,16 @@ function Exposed() {
                     </ul>
                   </li>
                   <li>
-                    Use a separate bathroom or, if sharing a bathroom, clean and
-                    disinfect touched surfaces after each use.
+                    <b>
+                      Use a separate bathroom or, if sharing a bathroom, clean
+                      and disinfect touched surfaces after each use.
+                    </b>
                   </li>
                   <li>
-                    Wash your hands often with soap and water for at least 20
-                    seconds.
+                    <b>
+                      Wash your hands often with soap and water for at least 20
+                      seconds.
+                    </b>
                     <ul>
                       <li>
                         See when and how to wash your hands. If you can’t wash
@@ -172,8 +193,10 @@ function Exposed() {
                     </ul>
                   </li>
                   <li>
-                    Clean and disinfect all “high-touch” surfaces routinely (at
-                    least once daily).
+                    <b>
+                      Clean and disinfect all “high-touch” surfaces routinely
+                      (at least once daily).
+                    </b>
                     <ul>
                       <li>
                         Use household cleaning and disinfectant sprays or wipes.

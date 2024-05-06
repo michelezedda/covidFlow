@@ -9,7 +9,9 @@
   h1 {
     font-size: 50px;
     text-align: center;
-    margin-bottom: 50px;
+  }
+  img {
+    text-align: center;
   }
   .split {
     display: grid;
@@ -24,6 +26,9 @@
   .right {
     h2 {
       font-size: 35px;
+    }
+    img {
+      width: 100%;
     }
   }
 }

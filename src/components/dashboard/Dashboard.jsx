@@ -1,4 +1,5 @@
 import "./dashboard.css";
+import familymaskPic from "/family-mask.png";
 
 function Dashboard() {
   return (
@@ -6,6 +7,7 @@ function Dashboard() {
       <div className="dashboard">
         <div className="container">
           <h1>Dashboard</h1>
+          <img src={familymaskPic} />
         </div>
       </div>
     </>

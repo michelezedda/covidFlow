@@ -1,6 +1,9 @@
 import "./testing.css";
 import Navbar from "../../components/navbar/Navbar";
 import Footer from "../../components/footer/Footer";
+import testPic from "/test.png";
+import protectedPic from "/protected.png";
+import antigenPic from "/antigen.png";
 
 function Testing() {
   return (
@@ -9,6 +12,9 @@ function Testing() {
       <div className="testing">
         <div className="container">
           <h1>TESTING</h1>
+          <div className="main-pic">
+            <img src={antigenPic} />
+          </div>
           <div className="split">
             <div className="left">
               <h2>HOW TO GET A TEST</h2>
@@ -49,9 +55,11 @@ function Testing() {
                   </li>
                 </ul>
               </p>
+              <img src={protectedPic} />
             </div>
             <div className="right">
               <h2>TYPES OF TESTS</h2>
+              <img src={testPic} />
               <p>
                 There are different types of COVID-19 tests.
                 <br />

@@ -1,6 +1,8 @@
 import "./masks.css";
 import Navbar from "../../components/navbar/Navbar";
 import Footer from "../../components/footer/Footer";
+import maskingPic from "/masking.png";
+import familymask2Pic from "/family-mask-2.png";
 
 function Masks() {
   return (
@@ -9,6 +11,9 @@ function Masks() {
       <div className="masks">
         <div className="container">
           <h1>WEARING A MASK</h1>
+          <div className="main-pic">
+            <img src={familymask2Pic} />
+          </div>
           <div className="split">
             <div className="left">
               <h2>HOW TO IMPROVE THE FIT AND FILTRATION OF YOUR MASK</h2>
@@ -91,6 +96,7 @@ function Masks() {
                 </ul>
               </p>
               <h2>KNOW WHICH MASKS PROVIDE THE BEST PROTECTION</h2>
+              <img src={maskingPic} />
               <p>
                 For a mask to work well, it needs to have both a good fit and
                 good filtration:
