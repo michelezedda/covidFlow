@@ -24,25 +24,25 @@ function Learn() {
                 death. Some people, including those who got no symptoms at
                 first, get health problems that last for weeks or months.
               </p>
-              <Link to="Masks" style={{ textDecoration: "none" }}>
+              <Link to="../Masks" style={{ textDecoration: "none" }}>
                 <div className="icons">
                   <img src={masksPic} />
                   Masks
                 </div>
               </Link>
-              <Link to="Sick" style={{ textDecoration: "none" }}>
+              <Link to="../Sick" style={{ textDecoration: "none" }}>
                 <div className="icons">
                   <img src={sickPic} />
                   Sick?
                 </div>
               </Link>
-              <Link to="Exposed" style={{ textDecoration: "none" }}>
+              <Link to="../Exposed" style={{ textDecoration: "none" }}>
                 <div className="icons">
                   <img src={exposedPic} />
                   Exposed?
                 </div>
               </Link>
-              <Link to="Testing" style={{ textDecoration: "none" }}>
+              <Link to="../Testing" style={{ textDecoration: "none" }}>
                 <div className="icons">
                   <img src={testingPic} />
                   Testing?
