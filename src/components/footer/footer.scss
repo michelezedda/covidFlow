@@ -1,8 +1,8 @@
 @import "../../styles/config";
 
 footer {
-  padding: 40px 10px 20px 10px;
-  display: flex;
+  padding: 70px 10px 50px 10px;
+  display: inline-block;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
@@ -10,7 +10,9 @@ footer {
   background-color: rgba($green-color, 0.8);
   color: $primary-color;
   text-align: center;
-  font-size: 18px;
+  left: 0;
+  bottom: 0;
+  width: 100%;
   span {
     color: $primary-color;
   }

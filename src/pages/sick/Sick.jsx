@@ -1,8 +1,14 @@
 import "./sick.css";
-import React, { useState, useEffect } from "react";
+import Navbar from "../../components/navbar/Navbar";
+import Footer from "../../components/footer/Footer";
 
 function Sick() {
-  return <></>;
+  return (
+    <>
+      <Navbar />
+      <Footer />
+    </>
+  );
 }
 
 export default Sick;

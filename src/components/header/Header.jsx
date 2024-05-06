@@ -19,12 +19,9 @@ function Header() {
               death. Some people, including those who got no symptoms at first,
               get health problems that last for weeks or months.
             </p>
-            <a href="../../pages/learn/Learn">
+            <Link to="Learn">
               <button>Learn about COVID-19</button>
-            </a>
-            <a href="../../pages/protect/Protect">
-              <button>Protect yourself and others</button>
-            </a>
+            </Link>
           </div>
           <div className="more">
             <Link to="Masks" style={{ textDecoration: "none" }}>
