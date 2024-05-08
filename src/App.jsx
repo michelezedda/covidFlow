@@ -4,6 +4,7 @@ import Navbar from "./components/navbar/Navbar";
 import Header from "./components/header/Header";
 import Dashboard from "./components/dashboard/Dashboard";
 import Footer from "./components/footer/Footer";
+import Download from "./components/download/Download";
 
 function App() {
   useEffect(() => {
@@ -20,6 +21,7 @@ function App() {
       <Navbar />
       <Header />
       <Dashboard />
+      <Download />
       <Footer />
     </>
   );
