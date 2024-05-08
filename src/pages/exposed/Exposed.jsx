@@ -11,13 +11,13 @@ function Exposed() {
       <Navbar />
       <div className="exposed">
         <div className="container">
-          <h1>WHAT IF YOU ARE EXPOSED?</h1>
+          <h2>WHAT IF YOU ARE EXPOSED?</h2>
           <div className="main-pic">
             <img src={virusPic} />
           </div>
           <div className="split">
             <div className="left">
-              <h2>OVERVIEW</h2>
+              <h3>OVERVIEW</h3>
               <p>
                 <b>If you feel sick with cold, flu, or COVID-19 symptoms:</b>
                 <ol>
@@ -121,9 +121,9 @@ function Exposed() {
               <img src={wearingmaskgirlPic} />
             </div>
             <div className="right">
-              <h2>
+              <h3>
                 PROTECT OTHERS: STAY HOME AND AWAY FROM OTHERS IF YOU FEEL SICK
-              </h2>
+              </h3>
               <img src={socialdistancingPic} />
               <p>
                 If you have symptoms of COVID-19 or another respiratory illness,

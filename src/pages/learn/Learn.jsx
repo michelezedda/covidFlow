@@ -6,6 +6,7 @@ import sickPic from "/sick.png";
 import masksPic from "/masks.png";
 import exposedPic from "/exposed.png";
 import testingPic from "/testing.png";
+import worldPic from "/world.png";
 
 function Learn() {
   return (
@@ -13,10 +14,13 @@ function Learn() {
       <Navbar />
       <div className="learn">
         <div className="container">
-          <h1>ABOUT COVID-19</h1>
+          <h2>ABOUT COVID-19</h2>
+          <div className="main-pic">
+            <img src={worldPic} />
+          </div>
           <div className="split">
             <div className="left">
-              <h2>WHAT IS COVID-19?</h2>
+              <h3>WHAT IS COVID-19?</h3>
               <p>
                 COVID-19 is a respiratory disease that is caused by the virus
                 SARS-CoV-2. Many people who are infected have mild symptoms or
@@ -50,7 +54,7 @@ function Learn() {
               </Link>
             </div>
             <div className="right">
-              <h2>SYMPTOMS</h2>
+              <h3>SYMPTOMS</h3>
               <p>
                 Symptoms of COVID-19 may include one or more of the following:
                 fever, chills, cough, shortness of breath or trouble breathing,
@@ -59,7 +63,7 @@ function Learn() {
                 of taste or smell. This list of symptoms is not all inclusive.
                 Some people with COVID-19 infection never get symptoms.
               </p>
-              <h2>HOW IT SPREADS</h2>
+              <h3>HOW IT SPREADS</h3>
               <p>
                 The virus spreads when a person with COVID-19 releases
                 respiratory droplets into the air for example, when speaking,

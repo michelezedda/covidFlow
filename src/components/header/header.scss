@@ -5,7 +5,7 @@
   justify-content: center;
   align-items: center;
   padding: 0;
-  margin: 100px 0;
+  margin: 120px 0;
   .about {
     text-align: center;
     h1 {
@@ -20,21 +20,23 @@
     }
   }
   button {
-    border: 1px solid $green-color;
+    border: 2px solid $green-color;
     background-color: $green-color;
     color: $primary-color;
     padding: 15px 15px;
     border-radius: 5px;
     margin-right: 20px;
-    font-size: 15px;
+    font-size: 18px;
     margin-bottom: 40px;
   }
   button:hover {
-    border: 1px solid $pink-color;
-    background-color: $pink-color;
+    border: 2px solid $green-color;
+    background-color: $green-color;
+    color: $primary-color;
+    cursor: pointer;
+    box-shadow: 0 0 10px $green-color;
   }
   button:active {
-    background-color: $pink-color;
     scale: calc(0.98);
   }
   .button-wrapper {
@@ -80,6 +82,170 @@
       color: $pink-color;
       cursor: pointer;
       box-shadow: 0 0 10px $pink-color;
+    }
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 100px 0;
+    .about {
+      text-align: center;
+      h1 {
+        font-size: 40px;
+      }
+      p {
+        font-size: 20px;
+        margin-bottom: 30px;
+      }
+      img {
+        width: 100px;
+      }
+    }
+    button {
+      border: 1px solid $green-color;
+      background-color: $green-color;
+      color: $primary-color;
+      padding: 15px 15px;
+      border-radius: 5px;
+      margin-right: 20px;
+      font-size: 20px;
+      margin-bottom: 40px;
+    }
+    button:hover {
+      border: 2px solid $green-color;
+      background-color: $green-color;
+      color: $primary-color;
+      cursor: pointer;
+      box-shadow: 0 0 10px $green-color;
+    }
+    button:active {
+      scale: calc(0.98);
+    }
+    .button-wrapper {
+      position: relative;
+    }
+    .button-wrapper::before,
+    .button-wrapper::after {
+      display: none;
+    }
+    .more {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      flex-shrink: 0;
+      .icons {
+        display: flex;
+        flex-direction: column;
+        border: 2px solid $green-color;
+        padding: 10px 20px;
+        margin: 20px 20px;
+        text-align: center;
+        font-size: 22px;
+        color: $green-color;
+        img {
+          width: 100px;
+        }
+      }
+      .icons:hover {
+        border: 2px solid $pink-color;
+        background-color: var($pink-color 0.99);
+        color: $pink-color;
+        cursor: pointer;
+        box-shadow: 0 0 10px $pink-color;
+      }
+    }
+  }
+}
+@media screen and (min-width: 900px) and (max-width: 1200px) {
+  .header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 120px 0;
+    .about {
+      text-align: center;
+      h1 {
+        font-size: 50px;
+      }
+      p {
+        font-size: 23px;
+        margin-bottom: 30px;
+      }
+      img {
+        width: 120px;
+      }
+    }
+    button {
+      border: 1px solid $green-color;
+      background-color: $green-color;
+      color: $primary-color;
+      padding: 15px 15px;
+      border-radius: 5px;
+      margin-right: 20px;
+      font-size: 18px;
+      margin-bottom: 40px;
+    }
+    button:hover {
+      border: 2px solid $green-color;
+      background-color: $green-color;
+      color: $primary-color;
+      cursor: pointer;
+      box-shadow: 0 0 10px $green-color;
+    }
+    button:active {
+      scale: calc(0.98);
+    }
+    .button-wrapper {
+      position: relative;
+    }
+    .button-wrapper::before,
+    .button-wrapper::after {
+      content: "";
+      position: absolute;
+      top: 30%;
+      width: 220px;
+      height: 2px;
+      background-color: $green-color;
+    }
+    .button-wrapper::before {
+      left: -1px;
+    }
+    .button-wrapper::after {
+      right: -1px;
+    }
+    .more {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      flex-shrink: 0;
+      .icons {
+        display: flex;
+        flex-direction: column;
+        border: 2px solid $green-color;
+        padding: 20px 40px;
+        margin: 20px 20px;
+        text-align: center;
+        font-size: 22px;
+        color: $green-color;
+        img {
+          width: 125px;
+        }
+      }
+      .icons:hover {
+        border: 2px solid $pink-color;
+        background-color: var($pink-color 0.99);
+        color: $pink-color;
+        cursor: pointer;
+        box-shadow: 0 0 10px $pink-color;
+      }
     }
   }
 }

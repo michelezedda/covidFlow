@@ -12,7 +12,7 @@ function Header() {
       <div className="header">
         <div className="container">
           <div className="about">
-            <h1>About COVID-19</h1>
+            <h1>*COVIDFLOW SLOGAN*</h1>
             <img src={infoPic} />
             <p>
               COVID-19 is a respiratory disease that is caused by the virus

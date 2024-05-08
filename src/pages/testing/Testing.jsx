@@ -11,13 +11,13 @@ function Testing() {
       <Navbar />
       <div className="testing">
         <div className="container">
-          <h1>TESTING</h1>
+          <h2>TESTING</h2>
           <div className="main-pic">
             <img src={antigenPic} />
           </div>
           <div className="split">
             <div className="left">
-              <h2>HOW TO GET A TEST</h2>
+              <h3>HOW TO GET A TEST</h3>
               <p>
                 <ul>
                   <li>
@@ -58,7 +58,7 @@ function Testing() {
               <img src={protectedPic} />
             </div>
             <div className="right">
-              <h2>TYPES OF TESTS</h2>
+              <h3>TYPES OF TESTS</h3>
               <img src={testPic} />
               <p>
                 There are different types of COVID-19 tests.
@@ -87,7 +87,7 @@ function Testing() {
                 They are not used to diagnose a current COVID-19 infection. See
                 CDC antibody tests.
               </p>
-              <h2>SELF TESTS</h2>
+              <h3>SELF TESTS</h3>
               <p>
                 How to use a self-test:
                 <ul>

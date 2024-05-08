@@ -11,13 +11,13 @@ function Masks() {
       <Navbar />
       <div className="masks">
         <div className="container">
-          <h1>WEARING A MASK</h1>
+          <h2>WEARING A MASK</h2>
           <div className="main-pic">
             <img src={familymask2Pic} />
           </div>
           <div className="split">
             <div className="left">
-              <h2>HOW TO IMPROVE THE FIT AND FILTRATION OF YOUR MASK</h2>
+              <h3>HOW TO IMPROVE THE FIT AND FILTRATION OF YOUR MASK</h3>
               <p>
                 <ul>
                   <li>
@@ -80,7 +80,7 @@ function Masks() {
               <img src={wearamaskPic} />
             </div>
             <div className="right">
-              <h2>WHO SHOULD NOT WEAR A MASK</h2>
+              <h3>WHO SHOULD NOT WEAR A MASK</h3>
               <p>
                 The following people should not wear a mask:
                 <ul>
@@ -97,7 +97,7 @@ function Masks() {
                   </li>
                 </ul>
               </p>
-              <h2>KNOW WHICH MASKS PROVIDE THE BEST PROTECTION</h2>
+              <h3>KNOW WHICH MASKS PROVIDE THE BEST PROTECTION</h3>
               <img src={maskingPic} />
               <p>
                 For a mask to work well, it needs to have both a good fit and

@@ -11,8 +11,9 @@ footer {
   color: $primary-color;
   text-align: center;
   width: 100%;
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
+  p {
+    font-size: 20px;
+  }
 }
 span {
   color: $primary-color;
@@ -23,17 +24,24 @@ span:hover {
 
 @media screen and (max-width: 800px) {
   footer {
-    padding: 70px 10px 50px 10px;
+    padding: 50px 10px 25px 10px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
     flex-shrink: 0;
-    background-color: rgba($green-color, 0.8);
+    background-color: rgba($green-color, 1);
     color: $primary-color;
     text-align: center;
     width: 100%;
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
+    p {
+      font-size: 18px;
+    }
+  }
+  span {
+    color: $primary-color;
+  }
+  span:hover {
+    font-weight: bold;
   }
 }

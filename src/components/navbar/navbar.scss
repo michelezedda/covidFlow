@@ -1,7 +1,7 @@
 @import "../../styles/config";
 
 nav {
-  background-color: $bg-color-3;
+  background-color: $primary-color;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -12,7 +12,7 @@ nav {
   transform: translateX(-50%);
   width: 100%;
   z-index: 100;
-  border: solid 0 $gray-color;
+  border: solid 0 $green-color;
   box-shadow: 1px 7px 5px -5px lighten($green-color, 0.9%);
   border-bottom: 2px solid $green-color;
   .logo-container img {
@@ -24,7 +24,7 @@ nav {
 
 @media screen and (max-width: 800px) {
   nav {
-    background-color: $bg-color-3;
+    background-color: $primary-color;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -34,12 +34,12 @@ nav {
     transform: translateX(-50%);
     width: 100%;
     z-index: 100;
-    border: solid 0 $gray-color;
+    border: solid 0 $green-color;
     box-shadow: 1px 7px 5px -5px lighten($green-color, 0.9%);
     border-bottom: 2px solid $green-color;
     margin: 0 auto;
     .logo-container img {
-      width: 480px;
+      width: 400px;
       height: auto;
       margin-right: 20px;
     }
@@ -47,7 +47,7 @@ nav {
 }
 @media screen and (min-width: 800.02px) and (max-width: 1190px) {
   nav {
-    background-color: $bg-color-3;
+    background-color: $primary-color;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -58,7 +58,7 @@ nav {
     transform: translateX(-50%);
     width: 100%;
     z-index: 100;
-    border: solid 0 $gray-color;
+    border: solid 0 $green-color;
     box-shadow: 1px 7px 5px -5px lighten($green-color, 0.9%);
     border-bottom: 2px solid $green-color;
     margin: 0 auto;

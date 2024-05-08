@@ -14,13 +14,13 @@ function Sick() {
       <Navbar />
       <div className="sick">
         <div className="container">
-          <h1>WHAT IF YOU ARE SICK?</h1>
+          <h2>WHAT IF YOU ARE SICK?</h2>
           <div className="main-pic">
             <img src={sicknessPic} />
-          </div>{" "}
+          </div>
           <div className="split">
             <div className="left">
-              <h2>PREVENTIVE ACTIONS</h2>
+              <h3>PREVENTIVE ACTIONS</h3>
               <p>
                 Effective treatments are available for COVID-19 and flu. Other
                 preventive actions to limit the spread of respiratory virus
@@ -43,7 +43,7 @@ function Sick() {
                   </li>
                 </ol>
               </p>
-              <h2>WHAT TO DO IF SICK</h2>
+              <h3>WHAT TO DO IF SICK</h3>
               <p>
                 <ol>
                   <li>
@@ -81,7 +81,7 @@ function Sick() {
                   </li>
                 </ol>
               </p>
-              <h2>REDUCING RISK OF RESPIRATORY ILLNESS:</h2>
+              <h3>REDUCING RISK OF RESPIRATORY ILLNESS:</h3>
               <p>
                 There are certain places where respiratory viruses spread more
                 easily:
@@ -146,7 +146,7 @@ function Sick() {
               </p>
             </div>
             <div className="right">
-              <h2>IMMUNIZATIONS</h2>
+              <h3>IMMUNIZATIONS</h3>
               <p>
                 Getting vaccinated is the best way to prevent severe illness.
                 Safe, updated immunizations are available for all three
@@ -172,7 +172,7 @@ function Sick() {
                   </li>
                 </ul>
               </p>
-              <h2>SYMPTOMS</h2>
+              <h3>SYMPTOMS</h3>
               <div className="symptoms-icons">
                 <img src={feverPic} />
                 <img src={coughPic} />
@@ -207,7 +207,7 @@ function Sick() {
                 Anyone who has difficulty breathing or symptoms that worsen
                 should seek immediate medical care.
               </p>
-              <h2>WHEN TO SEEK MEDICAL CARE</h2>
+              <h3>WHEN TO SEEK MEDICAL CARE</h3>
               <p>
                 For treatments, talk to your healthcare provider. Call 2-1-1 to
                 find a nearby provider if it is not an emergency and you do not
@@ -238,7 +238,7 @@ function Sick() {
                 LA County Department of Public Health can assist with COVID-19
                 treatment.
               </p>
-              <img src={wearingmaskboyPic} />
+              <img src={wearingmaskboyPic} className="wearing-mask-boy" />
             </div>
           </div>
         </div>
