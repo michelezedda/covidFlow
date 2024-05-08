@@ -16,7 +16,7 @@
       margin-bottom: 30px;
     }
     img {
-      width: 120px;
+      width: 165px;
     }
   }
   button {
@@ -86,7 +86,7 @@
   }
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 800px) {
   .header {
     display: flex;
     justify-content: center;
@@ -134,7 +134,8 @@
       display: none;
     }
     .more {
-      display: flex;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
       flex-wrap: wrap;
       justify-content: center;
       align-items: center;
@@ -142,6 +143,8 @@
       .icons {
         display: flex;
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
         border: 2px solid $green-color;
         padding: 10px 20px;
         margin: 20px 20px;
@@ -162,7 +165,7 @@
     }
   }
 }
-@media screen and (min-width: 900px) and (max-width: 1200px) {
+@media screen and (min-width: 800px) and (max-width: 1200px) {
   .header {
     display: flex;
     justify-content: center;
@@ -248,4 +251,25 @@
       }
     }
   }
+}
+
+@keyframes wiggle {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(5deg);
+  }
+  50% {
+    transform: rotate(-5deg);
+  }
+  75% {
+    transform: rotate(3deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+.wiggle {
+  animation: wiggle 5s infinite;
 }
