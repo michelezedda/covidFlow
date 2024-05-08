@@ -1,9 +1,17 @@
-import axios from "axios";
 import "./dashboard.css";
-import React, { useState, useEffect } from "react";
+import familymaskPic from "/family-mask.png";
 
 function Dashboard() {
-  return <></>;
+  return (
+    <>
+      <div className="dashboard">
+        <div className="container">
+          <h2>Dashboard</h2>
+          <img src={familymaskPic} />
+        </div>
+      </div>
+    </>
+  );
 }
 
 export default Dashboard;

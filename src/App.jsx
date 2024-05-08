@@ -17,6 +17,7 @@ function App() {
         <title>covidFlow - Stay Safe</title>
         <link rel="canonical" href="https://covidflow.netlify.app/" />
       </Helmet>
+      <Navbar />
       <Header />
       <Dashboard />
       <Footer />

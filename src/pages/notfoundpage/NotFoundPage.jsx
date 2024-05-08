@@ -1,8 +1,14 @@
 import "./notfoundpage.css";
-import React, { useState, useEffect } from "react";
+import Navbar from "../../components/navbar/Navbar";
+import Footer from "../../components/footer/Footer";
 
 function NotFoundPage() {
-  return <></>;
+  return (
+    <>
+      <Navbar />
+      <Footer />
+    </>
+  );
 }
 
 export default NotFoundPage;

@@ -1,8 +1,14 @@
 import "./states.css";
-import React, { useState, useEffect } from "react";
+import Navbar from "../../components/navbar/Navbar";
+import Footer from "../../components/footer/Footer";
 
 function States() {
-  return <></>;
+  return (
+    <>
+      <Navbar />
+      <Footer />
+    </>
+  );
 }
 
 export default States;
