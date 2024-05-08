@@ -13,7 +13,7 @@ function Header() {
         <div className="container">
           <div className="about">
             <h1>*COVIDFLOW SLOGAN*</h1>
-            <img src={infoPic} />
+            <img src={infoPic} className="wiggle" />
             <p>
               COVID-19 is a respiratory disease that is caused by the virus
               SARS-CoV-2. Many people who are infected have mild symptoms or
