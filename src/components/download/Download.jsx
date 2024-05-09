@@ -11,8 +11,11 @@ function Download() {
         <div className="container">
           <div className="split">
             <div className="left">
-              <h3>Download our app for free and stay safe!</h3>
-              <p>Stay updated on COVID stats</p>
+              <h3>Download our app for free and ensure your safety!</h3>
+              <p>
+                Stay informed with real-time updates on COVID-19 statistics and
+                protect yourself and your loved ones.
+              </p>
               <Link to="https://www.apple.com/app-store/">
                 <img src={appStorePic} />
               </Link>
