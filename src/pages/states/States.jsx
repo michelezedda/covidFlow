@@ -3,11 +3,14 @@ import Navbar from "../../components/navbar/Navbar";
 import Footer from "../../components/footer/Footer";
 import { useState, useEffect } from "react";
 import axios from "axios";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faSpinner } from "@fortawesome/free-solid-svg-icons";
 
 function States() {
   const [stateData, setStateData] = useState(null);
-  const [selectedState, setSelectedState] = useState(""); // State for selected state name
+  const [selectedState, setSelectedState] = useState("");
   const [searchError, setSearchError] = useState("");
+  const [loading, setLoading] = useState(false);
 
   const stateOptions = [
     { name: "Alabama" },
@@ -64,6 +67,7 @@ function States() {
 
   useEffect(() => {
     const fetchDataByState = async () => {
+      setLoading(true);
       try {
         const response = await axios.get(
           `https://covid-api.com/api/reports?iso=USA&region_province=${selectedState}`
@@ -76,6 +80,7 @@ function States() {
         setStateData(null);
         setSearchError("Error fetching state data. Please try again.");
       }
+      setLoading(false);
     };
 
     if (selectedState) {
@@ -85,10 +90,9 @@ function States() {
 
   const handleSearch = (event) => {
     event.preventDefault();
-    // Instead of getting state code from input, get it from selected option
-    const selectedStateCode = event.target.elements.stateSelect.value;
-    console.log("Selected State Code:", selectedStateCode);
-    setSelectedState(selectedStateCode);
+    const selectedStateName = event.target.elements.stateSelect.value;
+    console.log("Selected State Name:", selectedStateName);
+    setSelectedState(selectedStateName);
   };
 
   console.log("State Data:", stateData);
@@ -99,12 +103,10 @@ function States() {
       <div className="state-search-container">
         <h1>Search COVID-19 Data by State</h1>
         <form className="state-search-form" onSubmit={handleSearch}>
-          {/* Replace input with select dropdown */}
           <label htmlFor="stateSelect">Select State:</label>
           <select id="stateSelect" name="stateSelect">
-            {/* Populate select options from stateOptions array */}
             {stateOptions.map((state) => (
-              <option key={state.code} value={state.code}>
+              <option key={state.name} value={state.name}>
                 {state.name}
               </option>
             ))}
@@ -112,6 +114,9 @@ function States() {
           <button type="submit">Search</button>
         </form>
         {searchError && <p className="error-message">{searchError}</p>}
+        {loading && (
+          <FontAwesomeIcon icon={faSpinner} spin className="loader" />
+        )}
         {stateData && stateData.length > 0 ? (
           <div className="state-data-container">
             <h2>{stateData[0]?.region?.province} COVID-19 Data</h2>
@@ -121,9 +126,7 @@ function States() {
             <p>Mortality rate: {stateData[0]?.fatality_rate}</p>
             <p>Last update: {stateData[0]?.last_update}</p>
           </div>
-        ) : (
-          <p>No data available</p>
-        )}
+        ) : null}
       </div>
       <Footer />
     </>
