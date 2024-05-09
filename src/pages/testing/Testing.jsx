@@ -4,10 +4,16 @@ import Footer from "../../components/footer/Footer";
 import testPic from "/test.png";
 import protectedPic from "/protected.png";
 import antigenPic from "/antigen.png";
+import { Helmet } from "react-helmet";
 
 function Testing() {
   return (
     <>
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>Testing</title>
+        <link rel="canonical" href="https://covidflow.netlify.app/" />
+      </Helmet>
       <Navbar />
       <div className="testing">
         <div className="container">

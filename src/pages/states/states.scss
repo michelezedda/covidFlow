@@ -6,6 +6,10 @@
   justify-content: center;
   margin: 120px auto;
   text-align: center;
+  img {
+    width: 80%;
+    margin: 10px 0 80px 0;
+  }
   h2 {
     font-size: 50px;
   }
@@ -63,5 +67,77 @@
     margin-bottom: 80px;
     height: 50px;
     color: $green-color;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .states {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 50px auto;
+    text-align: center;
+    img {
+      width: 80%;
+      margin: 10px 0 80px 0;
+    }
+    h2 {
+      font-size: 40px;
+    }
+    .state-search-form {
+      max-width: 600px;
+      margin-bottom: 100px;
+      display: flex;
+      flex-direction: column;
+      label {
+        font-size: 30px;
+        font-weight: bold;
+        margin-bottom: 5px;
+      }
+      select {
+        padding: 10px;
+        font-size: 18px;
+        border: 1px solid $green-color;
+        border-radius: 5px;
+        margin-bottom: 10px;
+        &:focus {
+          border: 1px solid $pink-color;
+        }
+      }
+      button[type="submit"] {
+        padding: 10px 20px;
+        font-size: 16px;
+        background-color: $green-color;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        &:hover {
+          background-color: $pink-color;
+          box-shadow: 0 0 10px $pink-color;
+        }
+      }
+    }
+    .error-message {
+      color: $pink-color;
+      margin-bottom: 10px;
+    }
+    .state-data-container {
+      text-align: left;
+      h3 {
+        font-size: 30px;
+        margin-bottom: 15px;
+      }
+      p {
+        font-size: 20px;
+        margin-bottom: 10px;
+      }
+    }
+    .loader {
+      margin-bottom: 80px;
+      height: 50px;
+      color: $green-color;
+    }
   }
 }

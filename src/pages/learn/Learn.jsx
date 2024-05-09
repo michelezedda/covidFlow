@@ -7,10 +7,16 @@ import masksPic from "/masks.png";
 import exposedPic from "/exposed.png";
 import testingPic from "/testing.png";
 import worldPic from "/world.png";
+import Helmet from "react-helmet";
 
 function Learn() {
   return (
     <>
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>About COVID-19</title>
+        <link rel="canonical" href="https://covidflow.netlify.app/" />
+      </Helmet>
       <Navbar />
       <div className="learn">
         <div className="container">

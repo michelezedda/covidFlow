@@ -4,10 +4,16 @@ import Footer from "../../components/footer/Footer";
 import maskingPic from "/masking.png";
 import familymask2Pic from "/family-mask-2.png";
 import wearamaskPic from "/wear-a-mask.png";
+import Helmet from "react-helmet";
 
 function Masks() {
   return (
     <>
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>Wearing a mask</title>
+        <link rel="canonical" href="https://covidflow.netlify.app/" />
+      </Helmet>
       <Navbar />
       <div className="masks">
         <div className="container">

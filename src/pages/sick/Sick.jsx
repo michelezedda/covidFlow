@@ -7,10 +7,16 @@ import coughPic from "/cough.png";
 import feverPic from "/fever.png";
 import sicknessPic from "/sickness.png";
 import wearingmaskboyPic from "/wearing-a-mask-boy.png";
+import wearingmaskgirlPic from "/wearing-a-mask-girl.png";
 
 function Sick() {
   return (
     <>
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>What if you are sick?</title>
+        <link rel="canonical" href="https://covidflow.netlify.app/" />
+      </Helmet>
       <Navbar />
       <div className="sick">
         <div className="container">

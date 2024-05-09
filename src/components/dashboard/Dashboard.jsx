@@ -1,7 +1,17 @@
 import "./dashboard.css";
-import familymaskPic from "/family-mask.png";
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import axios from "axios";
+import familymaskPic from "/family-mask.png";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faSpinner,
+  faCheckCircle,
+  faHeartbeat,
+  faSkullCrossbones,
+  faPercentage,
+  faClock,
+} from "@fortawesome/free-solid-svg-icons";
 
 function Dashboard() {
   const [globalData, setGlobalData] = useState(null);
@@ -28,19 +38,37 @@ function Dashboard() {
           <h2>Global COVID-19 Data</h2>
           {globalData ? (
             <div className="data">
-              <p>Total confirmed cases: {globalData.confirmed}</p>
-              <p>Total deaths: {globalData.deaths}</p>
-              <p>Last update: {globalData.last_update}</p>
               <p>
-                Mortality rate:{" "}
+                <FontAwesomeIcon icon={faCheckCircle} /> &nbsp; Total confirmed
+                cases: &nbsp; {globalData.confirmed}
+              </p>
+              <p>
+                <FontAwesomeIcon icon={faHeartbeat} /> &nbsp; Active cases:
+                &nbsp;
+                {globalData.active}
+              </p>
+              <p>
+                <FontAwesomeIcon icon={faSkullCrossbones} /> &nbsp; Total
+                deaths: &nbsp; {globalData.deaths}
+              </p>
+              <p>
+                <FontAwesomeIcon icon={faPercentage} /> &nbsp; Mortality rate:
+                &nbsp;
                 {((globalData.deaths / globalData.confirmed) * 100).toFixed(2)}%
               </p>
-              <p>Active cases: {globalData.active}</p>
+
+              <p>
+                <FontAwesomeIcon icon={faClock} /> &nbsp; Last update: &nbsp;
+                {globalData.last_update}
+              </p>
             </div>
           ) : (
-            <p>Loading...</p>
+            <FontAwesomeIcon icon={faSpinner} spin className="loader" />
           )}
-          <img src={familymaskPic} alt="Family with masks" />
+          <Link to="/States" style={{ textDecoration: "none" }}>
+            <div className="usa-data-btn">View COVID-19 data for the USA</div>
+          </Link>
+          <img src={familymaskPic} />
         </div>
       </div>
     </>

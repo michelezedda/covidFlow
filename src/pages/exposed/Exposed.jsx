@@ -4,10 +4,16 @@ import Footer from "../../components/footer/Footer";
 import virusPic from "/virus.png";
 import socialdistancingPic from "/social-distancing.png";
 import wearingmaskgirlPic from "/wearing-a-mask-girl.png";
+import { Helmet } from "react-helmet";
 
 function Exposed() {
   return (
     <>
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>What if you are exposed?</title>
+        <link rel="canonical" href="https://covidflow.netlify.app/" />
+      </Helmet>
       <Navbar />
       <div className="exposed">
         <div className="container">

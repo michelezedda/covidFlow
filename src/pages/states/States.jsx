@@ -3,8 +3,17 @@ import Navbar from "../../components/navbar/Navbar";
 import Footer from "../../components/footer/Footer";
 import { useState, useEffect } from "react";
 import axios from "axios";
+import usaPic from "/usa.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faSpinner } from "@fortawesome/free-solid-svg-icons";
+import {
+  faSpinner,
+  faCheckCircle,
+  faHeartbeat,
+  faSkullCrossbones,
+  faPercentage,
+  faClock,
+} from "@fortawesome/free-solid-svg-icons";
+import { Helmet } from "react-helmet";
 
 function States() {
   const [stateData, setStateData] = useState(null);
@@ -99,10 +108,16 @@ function States() {
 
   return (
     <>
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>COVID-19 Data by State</title>
+        <link rel="canonical" href="https://covidflow.netlify.app/" />
+      </Helmet>
       <Navbar />
       <div className="states">
         <div className="container">
           <h2>Search COVID-19 Data by State</h2>
+          <img src={usaPic} />
           <form className="state-search-form" onSubmit={handleSearch}>
             <label htmlFor="stateSelect">Select State:</label>
             <select id="stateSelect" name="stateSelect">
@@ -121,11 +136,30 @@ function States() {
           {stateData && stateData.length > 0 ? (
             <div className="state-data-container">
               <h3>{stateData[0]?.region?.province} COVID-19 Data</h3>
-              <p>Total confirmed cases: {stateData[0]?.confirmed}</p>
-              <p>Total deaths: {stateData[0]?.deaths}</p>
-              <p>Active cases: {stateData[0]?.active}</p>
-              <p>Mortality rate: {stateData[0]?.fatality_rate}</p>
-              <p>Last update: {stateData[0]?.last_update}</p>
+              <p>
+                <FontAwesomeIcon icon={faCheckCircle} /> &nbsp; Total confirmed
+                cases: &nbsp;
+                {stateData[0]?.confirmed}
+              </p>
+              <p>
+                <FontAwesomeIcon icon={faHeartbeat} /> &nbsp; Active cases:
+                &nbsp;
+                {stateData[0]?.active}
+              </p>
+              <p>
+                <FontAwesomeIcon icon={faSkullCrossbones} /> &nbsp; Total
+                deaths: &nbsp;
+                {stateData[0]?.deaths}
+              </p>
+              <p>
+                <FontAwesomeIcon icon={faPercentage} /> &nbsp; Mortality rate:
+                &nbsp;
+                {stateData[0]?.fatality_rate}
+              </p>
+              <p>
+                <FontAwesomeIcon icon={faClock} /> &nbsp; Last update: &nbsp;
+                {stateData[0]?.last_update}
+              </p>
             </div>
           ) : null}
         </div>
