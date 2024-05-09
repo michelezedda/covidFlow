@@ -52,7 +52,7 @@
     }
     h2 {
       text-align: center;
-      font-size: 50px;
+      font-size: 40px;
     }
     p {
       font-size: 20px;
@@ -62,6 +62,21 @@
       margin-bottom: 80px;
       height: 50px;
       color: $green-color;
+    }
+    .usa-data-btn {
+      border: 2px solid $green-color;
+      padding: 20px 40px;
+      margin: 100px 20px;
+      text-align: center;
+      font-size: 22px;
+      color: $green-color;
+      &:hover {
+        border: 2px solid $pink-color;
+        background-color: var($pink-color 0.99);
+        color: $pink-color;
+        cursor: pointer;
+        box-shadow: 0 0 10px $pink-color;
+      }
     }
   }
 }
