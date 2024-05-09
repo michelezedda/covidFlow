@@ -6,14 +6,67 @@ import axios from "axios";
 
 function States() {
   const [stateData, setStateData] = useState(null);
-  const [stateCode, setStateCode] = useState("");
+  const [selectedState, setSelectedState] = useState(""); // State for selected state name
   const [searchError, setSearchError] = useState("");
+
+  const stateOptions = [
+    { name: "Alabama" },
+    { name: "Alaska" },
+    { name: "Arizona" },
+    { name: "Arkansas" },
+    { name: "California" },
+    { name: "Colorado" },
+    { name: "Connecticut" },
+    { name: "Delaware" },
+    { name: "Florida" },
+    { name: "Georgia" },
+    { name: "Hawaii" },
+    { name: "Idaho" },
+    { name: "Illinois" },
+    { name: "Indiana" },
+    { name: "Iowa" },
+    { name: "Kansas" },
+    { name: "Kentucky" },
+    { name: "Louisiana" },
+    { name: "Maine" },
+    { name: "Maryland" },
+    { name: "Massachusetts" },
+    { name: "Michigan" },
+    { name: "Minnesota" },
+    { name: "Mississippi" },
+    { name: "Missouri" },
+    { name: "Montana" },
+    { name: "Nebraska" },
+    { name: "Nevada" },
+    { name: "New Hampshire" },
+    { name: "New Jersey" },
+    { name: "New Mexico" },
+    { name: "New York" },
+    { name: "North Carolina" },
+    { name: "North Dakota" },
+    { name: "Ohio" },
+    { name: "Oklahoma" },
+    { name: "Oregon" },
+    { name: "Pennsylvania" },
+    { name: "Rhode Island" },
+    { name: "South Carolina" },
+    { name: "South Dakota" },
+    { name: "Tennessee" },
+    { name: "Texas" },
+    { name: "Utah" },
+    { name: "Vermont" },
+    { name: "Virginia" },
+    { name: "Washington" },
+    { name: "West Virginia" },
+    { name: "Wisconsin" },
+    { name: "Wyoming" },
+  ];
 
   useEffect(() => {
     const fetchDataByState = async () => {
       try {
         const response = await axios.get(
-          `https://covid-api.com/api/reports?iso=USA&region_province=${stateCode}`
+          `https://covid-api.com/api/reports?iso=USA&region_province=${selectedState}`
         );
         console.log("Response:", response.data);
         setStateData(response.data.data);
@@ -25,16 +78,17 @@ function States() {
       }
     };
 
-    if (stateCode) {
+    if (selectedState) {
       fetchDataByState();
     }
-  }, [stateCode]);
+  }, [selectedState]);
 
   const handleSearch = (event) => {
     event.preventDefault();
-    const stateCodeInput = event.target.elements.stateCode.value.toUpperCase();
-    console.log("Search State Code:", stateCodeInput);
-    setStateCode(stateCodeInput);
+    // Instead of getting state code from input, get it from selected option
+    const selectedStateCode = event.target.elements.stateSelect.value;
+    console.log("Selected State Code:", selectedStateCode);
+    setSelectedState(selectedStateCode);
   };
 
   console.log("State Data:", stateData);
@@ -45,8 +99,16 @@ function States() {
       <div className="state-search-container">
         <h1>Search COVID-19 Data by State</h1>
         <form className="state-search-form" onSubmit={handleSearch}>
-          <label htmlFor="stateCode">Enter State Code (e.g., NY, CA):</label>
-          <input type="text" id="stateCode" name="stateCode" />
+          {/* Replace input with select dropdown */}
+          <label htmlFor="stateSelect">Select State:</label>
+          <select id="stateSelect" name="stateSelect">
+            {/* Populate select options from stateOptions array */}
+            {stateOptions.map((state) => (
+              <option key={state.code} value={state.code}>
+                {state.name}
+              </option>
+            ))}
+          </select>
           <button type="submit">Search</button>
         </form>
         {searchError && <p className="error-message">{searchError}</p>}
