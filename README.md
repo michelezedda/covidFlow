@@ -10,7 +10,7 @@
 
 ## Key Features
 
-- Dashboard: Provide all data for tracking COVID-19 cases in the United States.
+- Dashboard: Provide global data for tracking COVID-19 cases.
 
 - "Learn" page: This page serves as an educational resource about COVID-19, providing information on transmission, symptoms, prevention measures, and treatment options.
 
@@ -21,6 +21,8 @@
 - "Exposed?" page: This page is designed for individuals who have been exposed to someone with COVID-19. It may offer guidance on quarantine protocols, testing recommendations, and steps to take to minimize the risk of spreading the virus to others.
 
 - "Testing?" page: This page provides information on COVID-19 testing options, including PCR tests, rapid antigen tests, and antibody tests. It may include guidance on when to get tested, and how to interpret test results.
+
+- "USA States" page:  Provide data for tracking COVID-19 cases for every state in the United States.
 
 
 ## Technologies Used
