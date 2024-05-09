@@ -25,9 +25,9 @@ function Dashboard() {
     <>
       <div className="dashboard">
         <div className="container">
-          <h2>Dashboard</h2>
+          <h2>Global COVID-19 Data</h2>
           {globalData ? (
-            <div>
+            <div className="data">
               <p>Total confirmed cases: {globalData.confirmed}</p>
               <p>Total deaths: {globalData.deaths}</p>
               <p>Last update: {globalData.last_update}</p>

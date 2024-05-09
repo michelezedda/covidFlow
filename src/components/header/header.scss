@@ -28,16 +28,14 @@
     margin-right: 20px;
     font-size: 18px;
     margin-bottom: 40px;
-  }
-  button:hover {
-    border: 2px solid $green-color;
-    background-color: $green-color;
-    color: $primary-color;
-    cursor: pointer;
-    box-shadow: 0 0 10px $green-color;
-  }
-  button:active {
-    scale: calc(0.98);
+    &:hover {
+      border: 2px solid $pink-color;
+      background-color: $pink-color;
+      color: $primary-color;
+      cursor: pointer;
+      box-shadow: 0 0 10px $pink-color;
+      transition: background-color 0.3s ease;
+    }
   }
   .button-wrapper {
     position: relative;

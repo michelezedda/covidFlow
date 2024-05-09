@@ -100,33 +100,35 @@ function States() {
   return (
     <>
       <Navbar />
-      <div className="state-search-container">
-        <h1>Search COVID-19 Data by State</h1>
-        <form className="state-search-form" onSubmit={handleSearch}>
-          <label htmlFor="stateSelect">Select State:</label>
-          <select id="stateSelect" name="stateSelect">
-            {stateOptions.map((state) => (
-              <option key={state.name} value={state.name}>
-                {state.name}
-              </option>
-            ))}
-          </select>
-          <button type="submit">Search</button>
-        </form>
-        {searchError && <p className="error-message">{searchError}</p>}
-        {loading && (
-          <FontAwesomeIcon icon={faSpinner} spin className="loader" />
-        )}
-        {stateData && stateData.length > 0 ? (
-          <div className="state-data-container">
-            <h2>{stateData[0]?.region?.province} COVID-19 Data</h2>
-            <p>Total confirmed cases: {stateData[0]?.confirmed}</p>
-            <p>Total deaths: {stateData[0]?.deaths}</p>
-            <p>Active cases: {stateData[0]?.active}</p>
-            <p>Mortality rate: {stateData[0]?.fatality_rate}</p>
-            <p>Last update: {stateData[0]?.last_update}</p>
-          </div>
-        ) : null}
+      <div className="states">
+        <div className="container">
+          <h2>Search COVID-19 Data by State</h2>
+          <form className="state-search-form" onSubmit={handleSearch}>
+            <label htmlFor="stateSelect">Select State:</label>
+            <select id="stateSelect" name="stateSelect">
+              {stateOptions.map((state) => (
+                <option key={state.name} value={state.name}>
+                  {state.name}
+                </option>
+              ))}
+            </select>
+            <button type="submit">Search</button>
+          </form>
+          {searchError && <p className="error-message">{searchError}</p>}
+          {loading && (
+            <FontAwesomeIcon icon={faSpinner} spin className="loader" />
+          )}
+          {stateData && stateData.length > 0 ? (
+            <div className="state-data-container">
+              <h3>{stateData[0]?.region?.province} COVID-19 Data</h3>
+              <p>Total confirmed cases: {stateData[0]?.confirmed}</p>
+              <p>Total deaths: {stateData[0]?.deaths}</p>
+              <p>Active cases: {stateData[0]?.active}</p>
+              <p>Mortality rate: {stateData[0]?.fatality_rate}</p>
+              <p>Last update: {stateData[0]?.last_update}</p>
+            </div>
+          ) : null}
+        </div>
       </div>
       <Footer />
     </>
