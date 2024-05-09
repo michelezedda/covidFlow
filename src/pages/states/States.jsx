@@ -119,7 +119,7 @@ function States() {
           <h2>Search COVID-19 Data by State</h2>
           <img src={usaPic} />
           <form className="state-search-form" onSubmit={handleSearch}>
-            <label htmlFor="stateSelect">Select State:</label>
+            <label htmlFor="stateSelect">Select a state:</label>
             <select id="stateSelect" name="stateSelect">
               {stateOptions.map((state) => (
                 <option key={state.name} value={state.name}>
