@@ -29,16 +29,16 @@
         text-align: center;
         font-size: 25px;
         color: $green-color;
+        &:hover {
+          border: 2px solid $pink-color;
+          background-color: var($pink-color 0.99);
+          color: $pink-color;
+          cursor: pointer;
+          box-shadow: 0 0 10px $pink-color;
+        }
         img {
           width: 125px;
         }
-      }
-      .icons:hover {
-        border: 2px solid $pink-color;
-        background-color: var($pink-color 0.99);
-        color: $pink-color;
-        cursor: pointer;
-        box-shadow: 0 0 10px $pink-color;
       }
     }
   }
@@ -53,6 +53,7 @@ p {
   margin-bottom: 30px;
 }
 
+// MEDIA QUERIES //
 @media screen and (max-width: 800px) {
   .learn {
     display: flex;
@@ -83,16 +84,16 @@ p {
           text-align: center;
           font-size: 22px;
           color: $green-color;
-          img {
-            width: 85px;
+          &:hover {
+            border: 2px solid $pink-color;
+            background-color: var($pink-color 0.99);
+            color: $pink-color;
+            cursor: pointer;
+            box-shadow: 0 0 10px $pink-color;
           }
         }
-        .icons:hover {
-          border: 2px solid $pink-color;
-          background-color: var($pink-color 0.99);
-          color: $pink-color;
-          cursor: pointer;
-          box-shadow: 0 0 10px $pink-color;
+        img {
+          width: 85px;
         }
       }
     }

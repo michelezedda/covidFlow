@@ -16,11 +16,12 @@ footer {
 }
 span {
   color: $primary-color;
-}
-span:hover {
-  font-weight: bold;
+  &:hover {
+    font-weight: bold;
+  }
 }
 
+// MEDIA QUERIES //
 @media screen and (max-width: 800px) {
   footer {
     padding: 50px 10px 25px 10px;
@@ -38,8 +39,8 @@ span:hover {
   }
   span {
     color: $primary-color;
-  }
-  span:hover {
-    font-weight: bold;
+    &:hover {
+      font-weight: bold;
+    }
   }
 }
