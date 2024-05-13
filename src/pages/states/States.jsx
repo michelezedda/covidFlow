@@ -21,6 +21,10 @@ function States() {
   const [searchError, setSearchError] = useState("");
   const [loading, setLoading] = useState(false);
 
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   const stateOptions = [
     { name: "Alabama" },
     { name: "Alaska" },

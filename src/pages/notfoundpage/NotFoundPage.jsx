@@ -3,8 +3,13 @@ import Navbar from "../../components/navbar/Navbar";
 import Footer from "../../components/footer/Footer";
 import notfoundpagePic from "/404.png";
 import { Helmet } from "react-helmet";
+import { useEffect } from "react";
 
 function NotFoundPage() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <>
       <Helmet>

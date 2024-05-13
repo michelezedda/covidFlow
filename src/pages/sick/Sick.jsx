@@ -1,4 +1,6 @@
 import "./sick.css";
+import { useEffect } from "react";
+import { Helmet } from "react-helmet";
 import Navbar from "../../components/navbar/Navbar";
 import Footer from "../../components/footer/Footer";
 import headachePic from "/headache.png";
@@ -7,9 +9,12 @@ import coughPic from "/cough.png";
 import feverPic from "/fever.png";
 import sicknessPic from "/sickness.png";
 import wearingmaskboyPic from "/wearing-a-mask-boy.png";
-import wearingmaskgirlPic from "/wearing-a-mask-girl.png";
 
 function Sick() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <>
       <Helmet>

@@ -5,8 +5,13 @@ import testPic from "/test.png";
 import protectedPic from "/protected.png";
 import antigenPic from "/antigen.png";
 import { Helmet } from "react-helmet";
+import { useEffect } from "react";
 
 function Testing() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <>
       <Helmet>
