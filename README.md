@@ -1,6 +1,6 @@
 <h1 align="center">
   <br>
-    <img src="https://covidflow.netlify.app/logo.png" width="600">
+    <img src="https://covidflow.netlify.app/logo.png" width="500">
   <br>
   covidFlow
   <br>
