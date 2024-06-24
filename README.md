@@ -6,7 +6,6 @@
 </h1>
 
 ## Key Features
-
 - **Dashboard**: Track global COVID-19 cases.
 - **Learn**: Educational resources about COVID-19 including transmission, symptoms, and prevention.
 - **Masks**: Guidance on mask types and proper usage.
@@ -26,7 +25,7 @@
 - **Vite**: Front-end dev tool improving developer experience.
 - **Axios**: Promise-based HTTP client for making asynchronous requests to API endpoints.
 - **API**: COVID-API.COM
-- 
+  
 ## Project Link
 
 Explore covidFlow: [covidFlow](https://covidflow.netlify.app/)  
