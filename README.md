@@ -16,10 +16,17 @@
 - **USA States**: COVID-19 data for each US state.
 
 ## Technologies Used
-- **Frontend**: HTML5, CSS3, JavaScript, React, Vite
-- **Tools**: Git, GitHub Pages, Axios
+- **HTML5 & CSS3**: Markup and styling languages for web development.
+- **Sass**: CSS extension language for more efficient styling.
+- **JavaScript**: Programming language for web interactivity.
+- **Git**: Version control system for tracking changes and collaborating.
+- **GitHub Pages**: Hosting platform for web applications.
+- **Node.js**: Server-side JavaScript runtime for real-time applications.
+- **React**: JavaScript library for dynamic user interfaces.
+- **Vite**: Front-end dev tool improving developer experience.
+- **Axios**: Promise-based HTTP client for making asynchronous requests to API endpoints.
 - **API**: COVID-API.COM
-
+- 
 ## Project Link
 
 Explore covidFlow: [covidFlow](https://covidflow.netlify.app/)  
