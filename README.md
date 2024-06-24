@@ -26,5 +26,6 @@
   
 ## Project Link
 
-Explore covidFlow: [covidFlow](https://covidflow.netlify.app/)  
+Explore covidFlow: [covidFlow](https://covidflow.netlify.app/) 
+
 [![Netlify Status](https://api.netlify.com/api/v1/badges/9c537389-6e6d-4703-ac14-32907beb2ce5/deploy-status)](https://app.netlify.com/sites/covidflow/deploys)
