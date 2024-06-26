@@ -27,7 +27,7 @@ function Sick() {
         <div className="container">
           <h2>WHAT IF YOU ARE SICK?</h2>
           <div className="main-pic">
-            <img src={sicknessPic} />
+            <img src={sicknessPic} alt="sickness" />
           </div>
           <div className="split">
             <div className="left">
@@ -185,10 +185,10 @@ function Sick() {
               </p>
               <h3>SYMPTOMS</h3>
               <div className="symptoms-icons">
-                <img src={feverPic} />
-                <img src={coughPic} />
-                <img src={headachePic} />
-                <img src={bodyachesPic} />
+                <img src={feverPic} alt="fever" />
+                <img src={coughPic} alt="cough" />
+                <img src={headachePic} alt="headache" />
+                <img src={bodyachesPic} alt="bodyaches" />
               </div>
               <p>
                 COVID-19, flu, and RSV are some of the diseases caused by
@@ -249,7 +249,11 @@ function Sick() {
                 LA County Department of Public Health can assist with COVID-19
                 treatment.
               </p>
-              <img src={wearingmaskboyPic} className="wearing-mask-boy" />
+              <img
+                src={wearingmaskboyPic}
+                alt="boy wearing mask"
+                className="wearing-mask-boy"
+              />
             </div>
           </div>
         </div>

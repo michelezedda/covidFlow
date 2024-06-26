@@ -23,7 +23,7 @@ function NotFoundPage() {
           <h2>
             Page not found! Even our servers are practicing social distancing.
           </h2>
-          <img src={notfoundpagePic} />
+          <img src={notfoundpagePic} alt="404" />
         </div>
       </div>
       <Footer />

@@ -24,7 +24,7 @@ function Testing() {
         <div className="container">
           <h2>TESTING</h2>
           <div className="main-pic">
-            <img src={antigenPic} />
+            <img src={antigenPic} alt="antigen" />
           </div>
           <div className="split">
             <div className="left">
@@ -66,11 +66,11 @@ function Testing() {
                   </li>
                 </ul>
               </p>
-              <img src={protectedPic} />
+              <img src={protectedPic} alt="protected" />
             </div>
             <div className="right">
               <h3>TYPES OF TESTS</h3>
-              <img src={testPic} />
+              <img src={testPic} alt="test" />
               <p>
                 There are different types of COVID-19 tests.
                 <br />

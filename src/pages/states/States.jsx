@@ -121,7 +121,7 @@ function States() {
       <div className="states">
         <div className="container">
           <h2>Search COVID-19 Data by State</h2>
-          <img src={usaPic} />
+          <img src={usaPic} alt="USA map" />
           <form className="state-search-form" onSubmit={handleSearch}>
             <label htmlFor="stateSelect">Select a state:</label>
             <select id="stateSelect" name="stateSelect">

@@ -24,7 +24,7 @@ function Exposed() {
         <div className="container">
           <h2>WHAT IF YOU ARE EXPOSED?</h2>
           <div className="main-pic">
-            <img src={virusPic} />
+            <img src={virusPic} alt="virus" />
           </div>
           <div className="split">
             <div className="left">
@@ -129,13 +129,13 @@ function Exposed() {
                   </li>
                 </ol>
               </p>
-              <img src={wearingmaskgirlPic} />
+              <img src={wearingmaskgirlPic} alt="girl wearing mask" />
             </div>
             <div className="right">
               <h3>
                 PROTECT OTHERS: STAY HOME AND AWAY FROM OTHERS IF YOU FEEL SICK
               </h3>
-              <img src={socialdistancingPic} />
+              <img src={socialdistancingPic} alt="social distancing" />
               <p>
                 If you have symptoms of COVID-19 or another respiratory illness,
                 stay home away from others until you have not had a fever for 24

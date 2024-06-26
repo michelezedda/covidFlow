@@ -68,7 +68,7 @@ function Dashboard() {
           <Link to="/States" style={{ textDecoration: "none" }}>
             <div className="usa-data-btn">View COVID-19 data for the USA</div>
           </Link>
-          <img src={familymaskPic} />
+          <img src={familymaskPic} alt="family wearing masks" />
         </div>
       </div>
     </>

@@ -17,14 +17,14 @@ function Download() {
                 protect yourself and your loved ones.
               </p>
               <Link to="https://www.apple.com/app-store/">
-                <img src={appStorePic} />
+                <img src={appStorePic} alt="app store" />
               </Link>
               <Link to="https://play.google.com/store/apps">
-                <img src={playStorePic} />
+                <img src={playStorePic} alt="play store" />
               </Link>
             </div>
             <div className="right">
-              <img src={phonePic} />
+              <img src={phonePic} alt="smartphone" />
             </div>
           </div>
         </div>

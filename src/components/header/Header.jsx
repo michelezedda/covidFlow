@@ -13,7 +13,7 @@ function Header() {
         <div className="container">
           <div className="about">
             <h1>United Against COVID-19: Let's Flow Together!</h1>
-            <img src={infoPic} className="wiggle" />
+            <img src={infoPic} alt="info" className="wiggle" />
             <p>
               COVID-19 is a respiratory disease that is caused by the virus
               SARS-CoV-2. Many people who are infected have mild symptoms or
@@ -30,25 +30,25 @@ function Header() {
           <div className="more">
             <Link to="Masks" style={{ textDecoration: "none" }}>
               <div className="icons">
-                <img src={masksPic} />
+                <img src={masksPic} alt="masks" />
                 Masks
               </div>
             </Link>
             <Link to="Sick" style={{ textDecoration: "none" }}>
               <div className="icons">
-                <img src={sickPic} />
+                <img src={sickPic} alt="sick" />
                 Sick?
               </div>
             </Link>
             <Link to="Exposed" style={{ textDecoration: "none" }}>
               <div className="icons">
-                <img src={exposedPic} />
+                <img src={exposedPic} alt="exposed" />
                 Exposed?
               </div>
             </Link>
             <Link to="Testing" style={{ textDecoration: "none" }}>
               <div className="icons">
-                <img src={testingPic} />
+                <img src={testingPic} alt="testing" />
                 Testing?
               </div>
             </Link>

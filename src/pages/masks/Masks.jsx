@@ -24,7 +24,7 @@ function Masks() {
         <div className="container">
           <h2>WEARING A MASK</h2>
           <div className="main-pic">
-            <img src={familymask2Pic} />
+            <img src={familymask2Pic} alt="family wearing masks" />
           </div>
           <div className="split">
             <div className="left">
@@ -88,7 +88,7 @@ function Masks() {
                   </li>
                 </ul>
               </p>
-              <img src={wearamaskPic} />
+              <img src={wearamaskPic} alt="wear a mask" />
             </div>
             <div className="right">
               <h3>WHO SHOULD NOT WEAR A MASK</h3>
@@ -109,7 +109,7 @@ function Masks() {
                 </ul>
               </p>
               <h3>KNOW WHICH MASKS PROVIDE THE BEST PROTECTION</h3>
-              <img src={maskingPic} />
+              <img src={maskingPic} alt="mask infos" />
               <p>
                 For a mask to work well, it needs to have both a good fit and
                 good filtration:

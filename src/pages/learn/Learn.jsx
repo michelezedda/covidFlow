@@ -27,7 +27,7 @@ function Learn() {
         <div className="container">
           <h2>ABOUT COVID-19</h2>
           <div className="main-pic">
-            <img src={worldPic} />
+            <img src={worldPic} alt="world" />
           </div>
           <div className="split">
             <div className="left">
@@ -41,25 +41,25 @@ function Learn() {
               </p>
               <Link to="../Masks" style={{ textDecoration: "none" }}>
                 <div className="icons">
-                  <img src={masksPic} />
+                  <img src={masksPic} alt="masks" />
                   Masks
                 </div>
               </Link>
               <Link to="../Sick" style={{ textDecoration: "none" }}>
                 <div className="icons">
-                  <img src={sickPic} />
+                  <img src={sickPic} alt="sick" />
                   Sick?
                 </div>
               </Link>
               <Link to="../Exposed" style={{ textDecoration: "none" }}>
                 <div className="icons">
-                  <img src={exposedPic} />
+                  <img src={exposedPic} alt="exposed" />
                   Exposed?
                 </div>
               </Link>
               <Link to="../Testing" style={{ textDecoration: "none" }}>
                 <div className="icons">
-                  <img src={testingPic} />
+                  <img src={testingPic} alt="testing" />
                   Testing?
                 </div>
               </Link>
