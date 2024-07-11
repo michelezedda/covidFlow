@@ -14,16 +14,13 @@ import {
   faClock,
 } from "@fortawesome/free-solid-svg-icons";
 import { Helmet } from "react-helmet";
+import { fetchCovidDataByState } from "../../components/clientAPI/clientAPI";
 
 function States() {
   const [stateData, setStateData] = useState(null);
   const [selectedState, setSelectedState] = useState("");
   const [searchError, setSearchError] = useState("");
   const [loading, setLoading] = useState(false);
-
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
 
   const stateOptions = [
     { name: "Alabama" },
@@ -82,14 +79,11 @@ function States() {
     const fetchDataByState = async () => {
       setLoading(true);
       try {
-        const response = await axios.get(
-          `https://covid-api.com/api/reports?iso=USA&region_province=${selectedState}`
-        );
-        console.log("Response:", response.data);
-        setStateData(response.data.data);
+        const data = await fetchCovidDataByState(selectedState);
+        console.log("Response:", data);
+        setStateData(data);
         setSearchError("");
       } catch (error) {
-        console.error("Error fetching state COVID data:", error);
         setStateData(null);
         setSearchError("Error fetching state data. Please try again.");
       }
@@ -108,7 +102,9 @@ function States() {
     setSelectedState(selectedStateName);
   };
 
-  console.log("State Data:", stateData);
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   return (
     <>
