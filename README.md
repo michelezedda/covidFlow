@@ -1,6 +1,6 @@
 <h1 align="center">
   <br>
-  <img src="https://covid-flow.vercel.app/logo.png" width="300" alt="covidFlow Logo">
+  <img src="https://covid-flow.vercel.app/logo.png" width="400" alt="covidFlow Logo">
   <br>
   <p align="center">Stay updated on COVID stats, stay safe!</p>
 </h1>
