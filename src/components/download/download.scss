@@ -12,11 +12,10 @@
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    text-align: center;
     flex-shrink: 0;
-    gap: 42px;
     .left {
       h3 {
-        text-align: left;
         font-size: 30px;
       }
       p {
