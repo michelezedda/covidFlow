@@ -20,7 +20,7 @@ function Sick() {
       <Helmet>
         <meta charSet="utf-8" />
         <title>What if you are sick?</title>
-        <link rel="canonical" href="https://covidflow.netlify.app/" />
+        <link rel="canonical" href="https://covid-flow.vercel.app/" />
       </Helmet>
       <Navbar />
       <div className="sick">

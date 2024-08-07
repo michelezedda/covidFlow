@@ -17,7 +17,7 @@ function Masks() {
       <Helmet>
         <meta charSet="utf-8" />
         <title>Wearing a mask</title>
-        <link rel="canonical" href="https://covidflow.netlify.app/" />
+        <link rel="canonical" href="https://covid-flow.vercel.app/" />
       </Helmet>
       <Navbar />
       <div className="masks">

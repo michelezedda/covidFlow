@@ -20,7 +20,7 @@ function Learn() {
       <Helmet>
         <meta charSet="utf-8" />
         <title>About COVID-19</title>
-        <link rel="canonical" href="https://covidflow.netlify.app/" />
+        <link rel="canonical" href="https://covid-flow.vercel.app/" />
       </Helmet>
       <Navbar />
       <div className="learn">

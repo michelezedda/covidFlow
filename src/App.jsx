@@ -16,7 +16,7 @@ function App() {
       <Helmet>
         <meta charSet="utf-8" />
         <title>covidFlow - Stay Safe</title>
-        <link rel="canonical" href="https://covidflow.netlify.app/" />
+        <link rel="canonical" href="https://covid-flow.vercel.app/" />
       </Helmet>
       <Navbar />
       <Header />

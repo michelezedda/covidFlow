@@ -111,7 +111,7 @@ function States() {
       <Helmet>
         <meta charSet="utf-8" />
         <title>COVID-19 Data by State</title>
-        <link rel="canonical" href="https://covidflow.netlify.app/" />
+        <link rel="canonical" href="https://covid-flow.vercel.app/" />
       </Helmet>
       <Navbar />
       <div className="states">

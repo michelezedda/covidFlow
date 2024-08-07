@@ -9,7 +9,6 @@ import Masks from "./pages/masks/Masks.jsx";
 import Exposed from "./pages/exposed/Exposed.jsx";
 import Sick from "./pages/sick/Sick.jsx";
 import Testing from "./pages/testing/Testing.jsx";
-import NotFoundPage from "./pages/notfoundpage/NotFoundPage.jsx";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
@@ -22,7 +21,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
         <Route path="/exposed" element={<Exposed />} />
         <Route path="/sick" element={<Sick />} />
         <Route path="/testing" element={<Testing />} />
-        <Route path="*" element={<NotFoundPage />} />
+        <Route path="*" element={<App />} />
       </Routes>
     </Router>
   </React.StrictMode>
