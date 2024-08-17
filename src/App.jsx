@@ -1,15 +1,13 @@
-import { useEffect } from "react";
 import { Helmet } from "react-helmet";
 import Navbar from "./components/navbar/Navbar";
 import Header from "./components/header/Header";
 import Dashboard from "./components/dashboard/Dashboard";
 import Footer from "./components/footer/Footer";
 import Download from "./components/download/Download";
+import { scrollToTop } from "./components/clientAPI/clientAPI";
 
 function App() {
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
+  scrollToTop();
 
   return (
     <>

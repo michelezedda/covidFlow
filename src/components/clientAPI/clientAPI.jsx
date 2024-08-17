@@ -25,3 +25,7 @@ export const fetchCovidDataByState = async (state) => {
     throw error;
   }
 };
+
+export const scrollToTop = () => {
+  window.scrollTo({ top: 0, behavior: "smooth" });
+};

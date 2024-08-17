@@ -1,5 +1,5 @@
 import "./sick.css";
-import { useEffect } from "react";
+import { scrollToTop } from "../../components/clientAPI/clientAPI";
 import { Helmet } from "react-helmet";
 import Navbar from "../../components/navbar/Navbar";
 import Footer from "../../components/footer/Footer";
@@ -11,9 +11,7 @@ import sicknessPic from "/sickness.png";
 import wearingmaskboyPic from "/wearing-a-mask-boy.png";
 
 function Sick() {
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
+  scrollToTop();
 
   return (
     <>

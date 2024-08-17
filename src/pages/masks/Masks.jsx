@@ -5,12 +5,10 @@ import maskingPic from "/masking.png";
 import familymask2Pic from "/family-mask-2.png";
 import wearamaskPic from "/wear-a-mask.png";
 import Helmet from "react-helmet";
-import { useEffect } from "react";
+import { scrollToTop } from "../../components/clientAPI/clientAPI";
 
 function Masks() {
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
+  scrollToTop();
 
   return (
     <>

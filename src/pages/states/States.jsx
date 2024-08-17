@@ -2,7 +2,6 @@ import "./states.css";
 import Navbar from "../../components/navbar/Navbar";
 import Footer from "../../components/footer/Footer";
 import { useState, useEffect } from "react";
-import axios from "axios";
 import usaPic from "/usa.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -14,7 +13,10 @@ import {
   faClock,
 } from "@fortawesome/free-solid-svg-icons";
 import { Helmet } from "react-helmet";
-import { fetchCovidDataByState } from "../../components/clientAPI/clientAPI";
+import {
+  fetchCovidDataByState,
+  scrollToTop,
+} from "../../components/clientAPI/clientAPI";
 
 function States() {
   const [stateData, setStateData] = useState(null);
@@ -102,9 +104,7 @@ function States() {
     setSelectedState(selectedStateName);
   };
 
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
+  scrollToTop();
 
   return (
     <>

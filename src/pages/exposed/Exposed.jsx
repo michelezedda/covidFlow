@@ -5,12 +5,10 @@ import virusPic from "/virus.png";
 import socialdistancingPic from "/social-distancing.png";
 import wearingmaskgirlPic from "/wearing-a-mask-girl.png";
 import { Helmet } from "react-helmet";
-import { useEffect } from "react";
+import { scrollToTop } from "../../components/clientAPI/clientAPI";
 
 function Exposed() {
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
+  scrollToTop();
 
   return (
     <>

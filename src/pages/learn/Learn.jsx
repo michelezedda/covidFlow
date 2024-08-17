@@ -8,12 +8,10 @@ import exposedPic from "/exposed.png";
 import testingPic from "/testing.png";
 import worldPic from "/world.png";
 import Helmet from "react-helmet";
-import { useEffect } from "react";
+import { scrollToTop } from "../../components/clientAPI/clientAPI";
 
 function Learn() {
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
+  scrollToTop();
 
   return (
     <>
