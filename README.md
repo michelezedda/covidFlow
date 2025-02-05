@@ -1,6 +1,6 @@
 <h1 align="center">
   <br>
-    <img src="https://i.ibb.co/JRb9S2yT/covidflow-project.png" alt="coconut. cosmetics" width="1100">
+    <img src="https://i.ibb.co/JRb9S2yT/covidflow-project.png" alt="covidFlow" width="1100">
   <br>
   <p align="center">Stay updated on COVID stats, stay safe!</p>
 </h1>
